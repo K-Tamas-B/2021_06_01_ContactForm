@@ -1,0 +1,34 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    {#{{ form(contactForm) }}#}
+
+    {{ form_start(contactForm, {'attr': {'class': 'c'}}) }}
+        <h1 class="text-center m-4">Contact Us</h1>
+
+        <div class="row m-4">
+            {{ form_widget(contactForm.Your_Name) }}
+        </div>
+
+        <div class="row m-4">
+            {{ form_widget(contactForm.Your_Email) }}
+        </div>
+
+        <div class="row m-4">
+            {{ form_widget(contactForm.The_Message) }}
+        </div>
+
+        <div class="row">
+            <div class="col d-grid gap-2">
+                {{ form_widget(contactForm.Reset) }}
+            </div>
+            <div class="col d-grid gap-2">
+                {{ form_widget(contactForm.Send) }}
+            </div>
+        </div>
+    {{ form_end(contactForm) }}
+
+{% endblock %}
+
+{# position-absolute top-50 start-50 translate-middle #}

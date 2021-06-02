@@ -1,0 +1,25 @@
+:root{
+    --bgc-primary: rgba(100,100,100,0.8);
+}
+
+body{
+    background-image: url(../assets/pexels-craig-dennis-57007.jpg);
+    background-repeat: no-repeat;
+    background-size: cover contain;
+    background-position: 0 50%;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+form{
+    display: block;
+    margin: auto;
+
+    background-color: var(--bgc-primary);
+    border-radius: 2rem;
+
+    width: 60%;
+    max-width: 720px;
+}
